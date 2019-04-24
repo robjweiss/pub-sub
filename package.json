@@ -1,0 +1,35 @@
+{
+  "name": "pub-sub",
+  "version": "1.0.0",
+  "description": "Practice at implementing a worker using the publish-subscribe pattern with redis",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"node src/worker.js\" \"node src/server.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robjweiss/pub-sub.git"
+  },
+  "keywords": [
+    "pub-sub",
+    "pubsub",
+    "publish-subscribe",
+    "redis",
+    "worker"
+  ],
+  "author": "Rob Weiss",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/robjweiss/pub-sub/issues"
+  },
+  "homepage": "https://github.com/robjweiss/pub-sub#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "node-fetch": "^2.3.0",
+    "node-redis-pubsub": "^4.0.0",
+    "node-uuid": "^1.4.8"
+  }
+}
